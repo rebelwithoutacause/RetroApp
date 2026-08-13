@@ -968,3 +968,18 @@ function getWeatherDescription(code) {
     };
     return descriptions[code] || 'UNKNOWN CONDITIONS';
 }
+
+// Visitor counter - increments per visit in this browser, seeded at the
+// original joke value so it keeps counting up instead of sitting fixed
+(function updateVisitCounter() {
+    const counterEl = document.getElementById('visitCounter');
+    if (!counterEl) return;
+
+    const STORAGE_KEY = 'retroQuizVisitCount';
+    const startingCount = 420;
+    const stored = parseInt(localStorage.getItem(STORAGE_KEY), 10);
+    const count = (isNaN(stored) ? startingCount : stored) + 1;
+
+    localStorage.setItem(STORAGE_KEY, count);
+    counterEl.textContent = String(count).padStart(6, '0');
+})();

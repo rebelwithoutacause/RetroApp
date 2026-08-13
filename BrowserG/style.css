@@ -550,23 +550,32 @@ body {
 }
 
 .footer {
-    background: #808080;
-    border-top: 5px ridge #fff;
+    background: linear-gradient(to bottom, #000080, #0000cd);
+    color: #ffff00;
+    border: 5px ridge #fff;
     text-align: center;
     padding: 20px;
-    margin-top: 40px;
+    margin: 40px 20px 20px;
+    box-shadow: 5px 5px 0px #000;
     font-size: 0.9rem;
-    color: #000;
 }
 
 .footer p {
-    margin: 5px 0;
+    margin: 8px 0;
 }
 
 .counter {
-    color: #ff0000;
+    display: inline-block;
+    background: #000;
+    color: #00ff00;
+    font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    padding: 2px 8px;
+    border: 2px solid #00ff00;
+    letter-spacing: 3px;
+    box-shadow: 0 0 8px rgba(0, 255, 0, 0.6);
+    vertical-align: middle;
 }
 
 @media (max-width: 768px) {
