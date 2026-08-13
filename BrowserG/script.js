@@ -209,6 +209,35 @@ const quizzes = {
     ]
 };
 
+function shuffleArray(array) {
+    const arr = array.slice();
+    for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+}
+
+// Returns a fresh copy of the category's questions with both question
+// order and each question's answer order randomized
+function buildShuffledQuiz(category) {
+    return shuffleArray(quizzes[category]).map(q => {
+        const optionOrder = shuffleArray(q.options.map((_, i) => i));
+        return {
+            question: q.question,
+            options: optionOrder.map(i => q.options[i]),
+            correct: optionOrder.indexOf(q.correct)
+        };
+    });
+}
+
+const masteryTitles = {
+    chess: 'chess master',
+    programming: 'code wizard',
+    it: 'tech guru',
+    horror: 'horror expert'
+};
+
 let currentCategory = '';
 let quizData = [];
 
@@ -236,7 +265,7 @@ const backBtn = document.getElementById('back-btn');
 
 function selectCategory(category) {
     currentCategory = category;
-    quizData = quizzes[category];
+    quizData = buildShuffledQuiz(category);
     currentQuestion = 0;
     score = 0;
     selectedAnswer = null;
@@ -326,7 +355,7 @@ function showResults() {
     percentageElement.textContent = `You got ${percentage}% correct!`;
 
     if (percentage >= 80) {
-        percentageElement.textContent += ' Excellent! You\'re a chess master!';
+        percentageElement.textContent += ` Excellent! You're a ${masteryTitles[currentCategory]}!`;
     } else if (percentage >= 60) {
         percentageElement.textContent += ' Good job! Keep learning!';
     } else {
@@ -335,6 +364,7 @@ function showResults() {
 }
 
 function restartQuiz() {
+    quizData = buildShuffledQuiz(currentCategory);
     currentQuestion = 0;
     score = 0;
     selectedAnswer = null;
