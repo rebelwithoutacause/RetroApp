@@ -807,6 +807,10 @@ function showFact(index) {
     });
     body.innerHTML = bodyHTML;
 
+    // Reset the window to its normal state for the new fact
+    const factWindow = document.getElementById('factWindow');
+    factWindow.classList.remove('is-minimized', 'is-maximized');
+
     // Show modal
     modal.style.display = 'flex';
 }
@@ -814,6 +818,22 @@ function showFact(index) {
 // Close fact detail
 function closeFact() {
     document.getElementById('fact-detail-modal').style.display = 'none';
+    document.getElementById('factWindow').classList.remove('is-minimized', 'is-maximized');
+}
+
+// Collapse/expand the fact window down to just its title bar
+function toggleFactMinimize() {
+    document.getElementById('factWindow').classList.toggle('is-minimized');
+}
+
+// Toggle the fact window between its normal size and filling the screen
+function toggleFactMaximize() {
+    const factWindow = document.getElementById('factWindow');
+    const maximizing = !factWindow.classList.contains('is-maximized');
+    factWindow.classList.toggle('is-maximized', maximizing);
+    if (maximizing) {
+        factWindow.classList.remove('is-minimized');
+    }
 }
 
 // Close dropdown when clicking outside

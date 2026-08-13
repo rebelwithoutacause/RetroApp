@@ -524,14 +524,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: default;
-}
-
-.window-btn-close {
     cursor: pointer;
 }
 
-.window-btn-close:active {
+.window-btn:active {
     border-top: 2px solid #404040;
     border-left: 2px solid #404040;
     border-right: 2px solid #fff;
@@ -540,6 +536,16 @@ body {
 
 .fact-detail-body-wrap {
     padding: 22px 30px 30px;
+}
+
+.fact-detail-content.is-minimized .fact-detail-body-wrap {
+    display: none;
+}
+
+.fact-detail-content.is-maximized {
+    max-width: 96vw;
+    width: 96vw;
+    max-height: 96vh;
 }
 
 .fact-detail-content h2 {
