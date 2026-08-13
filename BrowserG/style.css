@@ -602,8 +602,20 @@ body {
         text-align: left;
     }
 
+    .category-table,
+    .category-table tbody,
+    .category-table tr,
+    .category-table td {
+        display: block;
+        width: 100%;
+    }
+
     .category-table {
-        border-spacing: 10px;
+        border-spacing: 0;
+    }
+
+    .category-box {
+        margin-bottom: 15px;
     }
 
     .category-content {
@@ -618,7 +630,52 @@ body {
         font-size: 2rem;
     }
 
+    .quiz-section {
+        padding: 10px;
+    }
+
     .quiz-container {
         padding: 15px;
+    }
+
+    .quiz-header h2 {
+        font-size: 1.6rem;
+    }
+
+    .score-container {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .question-container h3 {
+        font-size: 1.2rem;
+    }
+
+    .next-btn, .restart-btn, .home-btn, .back-btn {
+        width: 100%;
+        margin: 5px 0;
+        padding: 14px 20px;
+        font-size: 1rem;
+    }
+
+    .result-container h2 {
+        font-size: 1.6rem;
+    }
+
+    .final-score {
+        font-size: 1.8rem;
+    }
+
+    .percentage {
+        font-size: 1.1rem;
+    }
+
+    .weather-modal-content h2,
+    .fact-detail-content h2 {
+        font-size: 1.4rem;
+    }
+
+    .temp-large {
+        font-size: 2.2rem;
     }
 }
