@@ -475,14 +475,71 @@ body {
 
 .fact-detail-content {
     background: #ffffff;
-    border: 5px ridge #ff0000;
-    padding: 30px;
+    border: 2px solid #000080;
+    padding: 0;
     box-shadow: 8px 8px 0px #000;
-    max-width: 800px;
-    width: 100%;
-    max-height: 90vh;
+    max-width: 1080px;
+    width: 94vw;
+    max-height: 92vh;
     overflow-y: auto;
     position: relative;
+}
+
+/* Windows-style title bar */
+.window-titlebar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    background: linear-gradient(180deg, #1084d0, #000080);
+    color: #fff;
+    padding: 5px 6px 5px 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+.window-controls {
+    display: flex;
+    gap: 3px;
+}
+
+.window-btn {
+    width: 22px;
+    height: 20px;
+    padding: 0;
+    background: #c0c0c0;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #404040;
+    border-bottom: 2px solid #404040;
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 0.8rem;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+}
+
+.window-btn-close {
+    cursor: pointer;
+}
+
+.window-btn-close:active {
+    border-top: 2px solid #404040;
+    border-left: 2px solid #404040;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.fact-detail-body-wrap {
+    padding: 22px 30px 30px;
 }
 
 .fact-detail-content h2 {
@@ -496,15 +553,18 @@ body {
 .fact-detail-body {
     background: #ffffcc;
     border: 3px dashed #000080;
-    padding: 20px;
+    padding: 18px 22px;
     margin-bottom: 20px;
+    columns: 2;
+    column-gap: 30px;
 }
 
 .fact-detail-body p {
     color: #000;
-    line-height: 1.8;
-    margin: 10px 0;
-    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0 0 10px;
+    font-size: 1.02rem;
+    break-inside: avoid;
 }
 
 .fact-detail-body strong {
@@ -512,6 +572,13 @@ body {
     font-size: 1.2rem;
     display: block;
     margin-bottom: 10px;
+    column-span: all;
+}
+
+@media (max-width: 720px) {
+    .fact-detail-body {
+        columns: 1;
+    }
 }
 
 .close-btn {

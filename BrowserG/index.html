@@ -128,9 +128,19 @@
     <!-- Single Fact Modal -->
     <div class="fact-detail-modal" id="fact-detail-modal" style="display: none;">
         <div class="fact-detail-content">
-            <h2 id="fact-detail-title">*** FACT ***</h2>
-            <div id="fact-detail-body" class="fact-detail-body"></div>
-            <button class="close-btn" onclick="closeFact()">CLOSE</button>
+            <div class="window-titlebar">
+                <span class="window-titlebar-text">FACT_VIEWER.EXE</span>
+                <div class="window-controls">
+                    <button class="window-btn" tabindex="-1" aria-hidden="true">_</button>
+                    <button class="window-btn" tabindex="-1" aria-hidden="true">&#9633;</button>
+                    <button class="window-btn window-btn-close" onclick="closeFact()" aria-label="Close">&times;</button>
+                </div>
+            </div>
+            <div class="fact-detail-body-wrap">
+                <h2 id="fact-detail-title">*** FACT ***</h2>
+                <div id="fact-detail-body" class="fact-detail-body"></div>
+                <button class="close-btn" onclick="closeFact()">CLOSE</button>
+            </div>
         </div>
     </div>
 
