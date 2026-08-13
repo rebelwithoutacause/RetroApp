@@ -508,6 +508,12 @@ body {
     margin: 0 0 10px;
     font-size: 1.02rem;
     break-inside: avoid;
+    overflow-wrap: break-word;
+}
+
+.fact-detail-body a {
+    color: #0000ff;
+    word-break: break-all;
 }
 
 .fact-detail-body strong {
