@@ -638,6 +638,20 @@ const masteryTitles = {
     horror: 'horror expert'
 };
 
+const goodJobMessages = {
+    chess: 'Good job! Your opening theory is solid!',
+    programming: 'Good job! Your code compiles clean!',
+    it: 'Good job! Your systems are running smoothly!',
+    horror: 'Good job! You survived... for now!'
+};
+
+const keepPracticingMessages = {
+    chess: "That's a blunder or two — keep practicing!",
+    programming: 'Looks like you hit a few bugs — keep practicing!',
+    it: 'Time to reboot and try again!',
+    horror: "The nightmare isn't over — keep practicing!"
+};
+
 let currentCategory = '';
 let quizData = [];
 
@@ -780,9 +794,9 @@ function showResults() {
     if (percentage >= 80) {
         percentageElement.textContent += ` Excellent! You're a ${masteryTitles[currentCategory]}!`;
     } else if (percentage >= 60) {
-        percentageElement.textContent += ' Good job! Keep learning!';
+        percentageElement.textContent += ` ${goodJobMessages[currentCategory]}`;
     } else {
-        percentageElement.textContent += ' Keep practicing!';
+        percentageElement.textContent += ` ${keepPracticingMessages[currentCategory]}`;
     }
 
     const previousBest = getHighScore(currentCategory);
