@@ -204,6 +204,14 @@ body {
     text-decoration: underline;
 }
 
+.category-content .best-score {
+    margin-top: 10px;
+    color: var(--cat);
+    font-weight: bold;
+    font-size: 0.85rem;
+    min-height: 1em;
+}
+
 .category-content p {
     color: #000080;
     font-size: 1.1rem;
@@ -398,6 +406,13 @@ body {
     background: #ffff00;
     padding: 15px;
     border: 3px solid #000;
+}
+
+.high-score {
+    font-size: 1.1rem;
+    color: #b8860b;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 .percentage {

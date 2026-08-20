@@ -49,6 +49,106 @@ const quizzes = {
             question: "Who is considered the first official World Chess Champion?",
             options: ["Bobby Fischer", "Wilhelm Steinitz", "Garry Kasparov", "Emanuel Lasker"],
             correct: 1
+        },
+        {
+            question: "Which piece can move any number of squares in any straight or diagonal direction?",
+            options: ["King", "Queen", "Rook", "Bishop"],
+            correct: 1
+        },
+        {
+            question: "How many squares can a king move in a single turn under normal circumstances?",
+            options: ["1", "2", "3", "Unlimited"],
+            correct: 0
+        },
+        {
+            question: "What is it called when a king is under direct attack?",
+            options: ["Check", "Checkmate", "Pin", "Fork"],
+            correct: 0
+        },
+        {
+            question: "What is the name for a move that attacks two pieces at once with a single piece?",
+            options: ["Pin", "Skewer", "Fork", "Discovery"],
+            correct: 2
+        },
+        {
+            question: "How many ranks (rows) are on a standard chessboard?",
+            options: ["6", "8", "10", "12"],
+            correct: 1
+        },
+        {
+            question: "On a properly set up board, what color is the square in each player's bottom-right corner?",
+            options: ["Light", "Dark", "Red", "It doesn't matter"],
+            correct: 0
+        },
+        {
+            question: "Excluding the king, which piece is generally considered the most valuable?",
+            options: ["Rook", "Bishop", "Queen", "Knight"],
+            correct: 2
+        },
+        {
+            question: "What is the opening 1.e4 e5 2.Nf3 Nc6 3.Bb5 commonly known as?",
+            options: ["Sicilian Defense", "Ruy Lopez", "Queen's Gambit", "King's Indian Defense"],
+            correct: 1
+        },
+        {
+            question: "In algebraic notation, what does 'O-O' represent?",
+            options: ["Kingside castling", "Queenside castling", "Check", "Checkmate"],
+            correct: 0
+        },
+        {
+            question: "Counting the original plus every pawn promoted, what is the maximum number of queens a player could theoretically have?",
+            options: ["8", "9", "10", "2"],
+            correct: 1
+        },
+        {
+            question: "In which chess variant can a captured piece be 'dropped' back onto the board by the capturing player?",
+            options: ["Chess960", "Crazyhouse", "Atomic Chess", "King of the Hill"],
+            correct: 1
+        },
+        {
+            question: "What is the name of the World Chess Federation, chess's international governing body?",
+            options: ["FIDE", "USCF", "ICCF", "WCF"],
+            correct: 0
+        },
+        {
+            question: "Which computer became the first to defeat a reigning World Chess Champion, Garry Kasparov, in a match?",
+            options: ["Deep Blue", "AlphaZero", "Stockfish", "HAL 9000"],
+            correct: 0
+        },
+        {
+            question: "What is it called when neither player has enough material left on the board to deliver checkmate?",
+            options: ["Stalemate", "Draw by insufficient material", "Threefold repetition", "Fifty-move rule"],
+            correct: 1
+        },
+        {
+            question: "How many points is a rook traditionally worth in material value?",
+            options: ["3", "5", "7", "9"],
+            correct: 1
+        },
+        {
+            question: "What is the term for the same board position occurring three times, allowing a draw to be claimed?",
+            options: ["Threefold repetition", "Zugzwang", "Fifty-move rule", "Perpetual check"],
+            correct: 0
+        },
+        {
+            question: "What is 'zugzwang'?",
+            options: ["A special pawn move", "A situation where any move worsens a player's position", "A type of checkmate", "An opening trap"],
+            correct: 1
+        },
+        {
+            question: "Which square does the white queen start the game on?",
+            options: ["d1", "e1", "d8", "e8"],
+            correct: 0
+        },
+        {
+            question: "What is the minimum number of moves in which checkmate can theoretically be delivered?",
+            options: ["1", "2", "3", "4"],
+            correct: 1
+        },
+        {
+            question: "Which World Chess Champion held the title for the longest continuous reign, at 27 years?",
+            options: ["Bobby Fischer", "Garry Kasparov", "Emanuel Lasker", "Anatoly Karpov"],
+            correct: 2
         }
     ],
     programming: [
@@ -101,6 +201,106 @@ const quizzes = {
             question: "What is the default port for HTTP?",
             options: ["21", "80", "443", "8080"],
             correct: 1
+        },
+        {
+            question: "What does CSS stand for?",
+            options: ["Cascading Style Sheets", "Computer Style Sheets", "Creative Style System", "Colorful Style Sheets"],
+            correct: 0
+        },
+        {
+            question: "Which data structure uses FIFO (First In First Out)?",
+            options: ["Stack", "Queue", "Tree", "Heap"],
+            correct: 1
+        },
+        {
+            question: "What year was Python first released?",
+            options: ["1989", "1991", "1995", "2000"],
+            correct: 1
+        },
+        {
+            question: "Who is credited as the inventor of the World Wide Web?",
+            options: ["Tim Berners-Lee", "Vint Cerf", "Marc Andreessen", "Bill Gates"],
+            correct: 0
+        },
+        {
+            question: "What does JSON stand for?",
+            options: ["JavaScript Object Notation", "Java Standard Object Notation", "JavaScript Ordered Nodes", "Joined Syntax Object Notation"],
+            correct: 0
+        },
+        {
+            question: "Which company originally developed the Java programming language?",
+            options: ["Microsoft", "Sun Microsystems", "Oracle", "IBM"],
+            correct: 1
+        },
+        {
+            question: "Which symbol denotes a single-line comment in Python?",
+            options: ["//", "#", "/*", "--"],
+            correct: 1
+        },
+        {
+            question: "What does 'IDE' stand for in programming?",
+            options: ["Integrated Development Environment", "Internal Design Editor", "Interactive Debug Engine", "Installed Development Extension"],
+            correct: 0
+        },
+        {
+            question: "Which sorting algorithm splits an array in half, sorts each half, then merges them back together?",
+            options: ["Bubble Sort", "Merge Sort", "Insertion Sort", "Selection Sort"],
+            correct: 1
+        },
+        {
+            question: "What does the version control tool Git primarily manage?",
+            options: ["Databases", "Changes to source code over time", "Servers", "Networks"],
+            correct: 1
+        },
+        {
+            question: "Which ES6 keyword declares a variable that cannot be reassigned?",
+            options: ["let", "var", "const", "static"],
+            correct: 2
+        },
+        {
+            question: "What does 'OOP' stand for?",
+            options: ["Object-Oriented Programming", "Open Operating Protocol", "Output-Oriented Process", "Ordered Object Pattern"],
+            correct: 0
+        },
+        {
+            question: "Which HTTP method is typically used to retrieve data without modifying it?",
+            options: ["POST", "GET", "DELETE", "PUT"],
+            correct: 1
+        },
+        {
+            question: "What is the standard file extension for a Python source file?",
+            options: [".py", ".pt", ".pyt", ".python"],
+            correct: 0
+        },
+        {
+            question: "Which company created the C# programming language?",
+            options: ["Microsoft", "Google", "Apple", "Sun Microsystems"],
+            correct: 0
+        },
+        {
+            question: "What does 'CLI' stand for?",
+            options: ["Command Line Interface", "Computer Language Index", "Central Logic Instruction", "Code Level Integration"],
+            correct: 0
+        },
+        {
+            question: "What is the term for a function that calls itself?",
+            options: ["Iteration", "Recursion", "Loop", "Callback"],
+            correct: 1
+        },
+        {
+            question: "What does 'SDK' stand for?",
+            options: ["Software Development Kit", "System Design Key", "Standard Development Kernel", "Software Debug Kit"],
+            correct: 0
+        },
+        {
+            question: "Which Git command combines changes from one branch into another?",
+            options: ["merge", "clone", "fork", "push"],
+            correct: 0
+        },
+        {
+            question: "What does 'REST' stand for in the context of web APIs?",
+            options: ["Representational State Transfer", "Remote Server Transaction", "Reliable State Transport", "Recursive State Transfer"],
+            correct: 0
         }
     ],
     it: [
@@ -153,6 +353,106 @@ const quizzes = {
             question: "What is the maximum length of a standard Ethernet cable (Cat5e/Cat6)?",
             options: ["50 meters", "100 meters", "150 meters", "200 meters"],
             correct: 1
+        },
+        {
+            question: "What does 'GPU' stand for?",
+            options: ["General Processing Unit", "Graphics Processing Unit", "Global Processor Utility", "Graphic Program Unit"],
+            correct: 1
+        },
+        {
+            question: "Which company developed the Windows operating system?",
+            options: ["Apple", "Microsoft", "IBM", "Google"],
+            correct: 1
+        },
+        {
+            question: "What does 'LAN' stand for?",
+            options: ["Local Area Network", "Long Access Node", "Linked Area Node", "Local Access Network"],
+            correct: 0
+        },
+        {
+            question: "Network transfer speed is typically measured in what unit?",
+            options: ["Bytes per second", "Bits per second", "Hertz", "Volts"],
+            correct: 1
+        },
+        {
+            question: "Which company owns the Android operating system?",
+            options: ["Google", "Apple", "Microsoft", "Samsung"],
+            correct: 0
+        },
+        {
+            question: "What does the 'S' added in HTTPS provide compared to plain HTTP?",
+            options: ["Speed", "Encryption/security", "Compression", "Caching"],
+            correct: 1
+        },
+        {
+            question: "What does 'DNS' stand for?",
+            options: ["Domain Name System", "Digital Network Service", "Data Node Structure", "Direct Naming Server"],
+            correct: 0
+        },
+        {
+            question: "Which storage device has no moving parts and stores data in flash memory?",
+            options: ["HDD", "SSD", "Floppy Disk", "Tape Drive"],
+            correct: 1
+        },
+        {
+            question: "What does 'VPN' stand for?",
+            options: ["Virtual Private Network", "Verified Public Node", "Virtual Protocol Node", "Variable Private Network"],
+            correct: 0
+        },
+        {
+            question: "In the traditional binary convention used by computers, how many bytes are in a kilobyte?",
+            options: ["1000", "1024", "1048", "2048"],
+            correct: 1
+        },
+        {
+            question: "What does 'GUI' stand for?",
+            options: ["Graphical User Interface", "General User Instruction", "Global Unified Interface", "Graphic Utility Index"],
+            correct: 0
+        },
+        {
+            question: "Which company created the first widely-used version of Internet Explorer?",
+            options: ["Microsoft", "Netscape", "Apple", "IBM"],
+            correct: 0
+        },
+        {
+            question: "What does 'ISP' stand for?",
+            options: ["Internet Service Provider", "Internal System Protocol", "Integrated Server Platform", "Internet Security Program"],
+            correct: 0
+        },
+        {
+            question: "What is the term for unsolicited bulk electronic messages?",
+            options: ["Spam", "Phishing", "Malware", "Cache"],
+            correct: 0
+        },
+        {
+            question: "Which port is commonly used for HTTPS traffic?",
+            options: ["80", "21", "443", "8080"],
+            correct: 2
+        },
+        {
+            question: "What does 'RGB' stand for in the context of computer displays?",
+            options: ["Red, Green, Blue", "Rapid Graphics Buffer", "Raster Graphic Board", "Red, Grey, Black"],
+            correct: 0
+        },
+        {
+            question: "Which type of memory loses its contents when the power is turned off?",
+            options: ["ROM", "RAM", "SSD", "HDD"],
+            correct: 1
+        },
+        {
+            question: "What does 'OS' stand for?",
+            options: ["Operating System", "Output Structure", "Online Service", "Operational Software"],
+            correct: 0
+        },
+        {
+            question: "Bluetooth technology transmits data wirelessly over short distances using what?",
+            options: ["Infrared light", "Radio waves", "Sound waves", "Laser"],
+            correct: 1
+        },
+        {
+            question: "What does 'PDF' stand for?",
+            options: ["Portable Document Format", "Printable Data File", "Personal Document Format", "Public Data Format"],
+            correct: 0
         }
     ],
     horror: [
@@ -205,6 +505,106 @@ const quizzes = {
             question: "What is the name of the Nostromo's computer in 'Alien'?",
             options: ["HAL", "MOTHER", "GLaDOS", "Skynet"],
             correct: 1
+        },
+        {
+            question: "Who directed the 1980 film 'The Shining'?",
+            options: ["Stanley Kubrick", "Stephen King", "John Carpenter", "Wes Craven"],
+            correct: 0
+        },
+        {
+            question: "What is the name of the masked killer in the 'Scream' franchise?",
+            options: ["Ghostface", "Jigsaw", "Michael Myers", "Leatherface"],
+            correct: 0
+        },
+        {
+            question: "What is the name of the masked killer in the original 'Halloween'?",
+            options: ["Jason Voorhees", "Michael Myers", "Freddy Krueger", "Leatherface"],
+            correct: 1
+        },
+        {
+            question: "Which lake is Jason Voorhees associated with in the 'Friday the 13th' franchise?",
+            options: ["Crystal Lake", "Elm Street", "Black Lagoon", "Silver Lake"],
+            correct: 0
+        },
+        {
+            question: "Who wrote the classic Gothic novel 'Dracula'?",
+            options: ["Bram Stoker", "Mary Shelley", "Edgar Allan Poe", "H.P. Lovecraft"],
+            correct: 0
+        },
+        {
+            question: "Who wrote 'Frankenstein'?",
+            options: ["Mary Shelley", "Bram Stoker", "Anne Rice", "Shirley Jackson"],
+            correct: 0
+        },
+        {
+            question: "What is the surname of the cannibalistic family in 'The Texas Chainsaw Massacre'?",
+            options: ["Sawyer", "Myers", "Voorhees", "Firefly"],
+            correct: 0
+        },
+        {
+            question: "'The Amityville Horror' is based on events allegedly taking place in which US state?",
+            options: ["New York", "New Jersey", "Massachusetts", "Connecticut"],
+            correct: 0
+        },
+        {
+            question: "Which fictional Maine town is the setting for Stephen King's 'It'?",
+            options: ["Derry", "Salem", "Riverdale", "Hawkins"],
+            correct: 0
+        },
+        {
+            question: "Who played Hannibal Lecter in 'The Silence of the Lambs'?",
+            options: ["Anthony Hopkins", "Anthony Perkins", "Christopher Lee", "Vincent Price"],
+            correct: 0
+        },
+        {
+            question: "What famous line does young Carol Anne say in 'Poltergeist'?",
+            options: ["They're here.", "Redrum.", "I see dead people.", "Get out."],
+            correct: 0
+        },
+        {
+            question: "Released in 1973, which film is considered one of the first major demonic possession horror movies?",
+            options: ["The Exorcist", "The Omen", "Rosemary's Baby", "Carrie"],
+            correct: 0
+        },
+        {
+            question: "In 'The Omen', what is the name of the antichrist child?",
+            options: ["Damien", "Regan", "Samara", "Michael"],
+            correct: 0
+        },
+        {
+            question: "Who directed the original 'Psycho' (1960)?",
+            options: ["Alfred Hitchcock", "Tobe Hooper", "George Romero", "Wes Craven"],
+            correct: 0
+        },
+        {
+            question: "What is the name of the motel in 'Psycho'?",
+            options: ["The Bates Motel", "The Overlook Hotel", "The Stanley Hotel", "Crystal Lake Motel"],
+            correct: 0
+        },
+        {
+            question: "Which director is known as the 'father of the modern zombie film' for 'Night of the Living Dead'?",
+            options: ["George A. Romero", "John Carpenter", "Sam Raimi", "Wes Craven"],
+            correct: 0
+        },
+        {
+            question: "What is the name of the alien creature that terrorizes the crew in 1979's 'Alien'?",
+            options: ["Xenomorph", "Predator", "Cthulhu", "The Thing"],
+            correct: 0
+        },
+        {
+            question: "In Stephen King's 'It', what form does Pennywise primarily take to lure children?",
+            options: ["A clown", "A vampire", "A witch", "A ghost"],
+            correct: 0
+        },
+        {
+            question: "In the 2017 film directed by Jordan Peele, what is the title of the movie about a man visiting his girlfriend's family?",
+            options: ["Get Out", "Us", "Split", "Hereditary"],
+            correct: 0
+        },
+        {
+            question: "What is the name of the boat used to hunt the shark in 'Jaws'?",
+            options: ["The Orca", "The Nautilus", "The Pequod", "The Flying Dutchman"],
+            correct: 0
         }
     ]
 };
@@ -259,9 +659,32 @@ const resultContainer = document.getElementById('result-container');
 const finalScoreElement = document.getElementById('final-score');
 const finalTotalElement = document.getElementById('final-total');
 const percentageElement = document.getElementById('percentage');
+const highScoreElement = document.getElementById('high-score');
 const restartBtn = document.getElementById('restart-btn');
 const homeBtn = document.getElementById('home-btn');
 const backBtn = document.getElementById('back-btn');
+
+const HIGH_SCORE_PREFIX = 'rqz_highscore_';
+
+function getHighScore(category) {
+    const stored = parseInt(localStorage.getItem(HIGH_SCORE_PREFIX + category), 10);
+    return isNaN(stored) ? null : stored;
+}
+
+function setHighScore(category, percentage) {
+    localStorage.setItem(HIGH_SCORE_PREFIX + category, percentage);
+}
+
+function renderHighScores() {
+    Object.keys(quizzes).forEach(category => {
+        const el = document.getElementById('best-' + category);
+        if (!el) return;
+        const best = getHighScore(category);
+        el.textContent = best === null ? '' : `HIGH SCORE: ${best}%`;
+    });
+}
+
+renderHighScores();
 
 function selectCategory(category) {
     currentCategory = category;
@@ -272,10 +695,10 @@ function selectCategory(category) {
     scoreElement.textContent = score;
 
     const titles = {
-        chess: '♔ CHESS QUIZ ♔',
-        programming: '⌨ PROGRAMMING QUIZ ⌨',
-        it: '💾 IT & TECH QUIZ 💾',
-        horror: '🎃 HORROR QUIZ 🎃'
+        chess: 'CHESS QUIZ',
+        programming: 'PROGRAMMING QUIZ',
+        it: 'IT & TECH QUIZ',
+        horror: 'HORROR QUIZ'
     };
 
     categoryTitle.textContent = titles[category];
@@ -361,6 +784,17 @@ function showResults() {
     } else {
         percentageElement.textContent += ' Keep practicing!';
     }
+
+    const previousBest = getHighScore(currentCategory);
+    if (previousBest === null || percentage > previousBest) {
+        setHighScore(currentCategory, percentage);
+        highScoreElement.textContent = previousBest === null
+            ? `NEW HIGH SCORE: ${percentage}%!`
+            : `NEW HIGH SCORE: ${percentage}% (previous: ${previousBest}%)!`;
+    } else {
+        highScoreElement.textContent = `HIGH SCORE: ${previousBest}%`;
+    }
+    renderHighScores();
 }
 
 function restartQuiz() {
