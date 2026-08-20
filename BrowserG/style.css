@@ -164,6 +164,7 @@ body {
 }
 
 .category-box {
+    --cat: #000080;
     background: #ffffff;
     border: 5px outset #fff;
     padding: 0;
@@ -173,11 +174,16 @@ body {
     transition: all 0.2s;
 }
 
+.category-box.cat-chess { --cat: #b8860b; }
+.category-box.cat-programming { --cat: #008000; }
+.category-box.cat-it { --cat: #006680; }
+.category-box.cat-horror { --cat: #8b0000; }
+
 .category-box:hover {
     border-style: inset;
     background: #ffffcc;
     transform: translate(2px, 2px);
-    box-shadow: 3px 3px 0px #000;
+    box-shadow: 3px 3px 0px #000, 0 0 20px var(--cat);
 }
 
 .category-box:active {
@@ -188,10 +194,11 @@ body {
 
 .category-content {
     padding: 30px;
+    border-top: 6px solid var(--cat);
 }
 
 .category-content h2 {
-    color: #ff0000;
+    color: var(--cat);
     font-size: 2rem;
     margin-bottom: 15px;
     text-decoration: underline;
